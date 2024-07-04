@@ -29,7 +29,7 @@ You can install the necessary packages using pip:
 2. Navigate to the directory containing the script.
 3. Run the script using Python:
 
-`python petrol_station_finder.py`
+`python main.py`
 
 4. Enter a valid UK postcode when prompted.
 
