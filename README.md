@@ -43,38 +43,41 @@ The script uses UK government fuel price data and geolocation to:
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.x  
 - Install dependencies:
 ```bash
 pip install geopy requests certifi
+```
 
----
 
-## ▶️ Usage
+### ▶️ Usage
 
 1. Clone the repository:
-```bash
-    git clone https://github.com/amg-ai-labs/petrol_station_finder.git  
-    cd petrol_station_finder
+  ```bash
+  git clone https://github.com/amg-ai-labs/petrol_station_finder.git  
+  cd petrol_station_finder
+  ```
 
 2. Run the script:
-```bash
+  ```bash
     python main.py
+  ```
 
 3. Enter a valid UK postcode when prompted.
 
 ---
 
-## 🧪 Testing
+### 🧪 Testing
 
 Basic unit tests are included in `test_main.py`.  
 To run tests:
 ```bash
     pytest test_main.py
+```
 
 ---
 
-## 🗂️ Code Overview
+### 🗂️ Code Overview
 
 ### `main.py`
 
@@ -94,9 +97,7 @@ To run tests:
 
 ---
 
-## 📊 Example Output
-
-## Example Output
+### 📊 Example Output
 
 ```
 Postcode: SW1A 1AA
@@ -121,7 +122,7 @@ Cheapest B7 diesel: 145.9p
 Cheapest SDV diesel: 150.9p
 ```
 
-## Data Sources
+### Data Sources
 
 The fuel price data is sourced from various UK fuel retailers, as listed below:
 
