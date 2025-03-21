@@ -1,6 +1,6 @@
 # Petrol Station Finder
 
-Welcome to the Petrol Station Finder! This Python program helps you locate the nearest petrol stations and their fuel prices within a 3-mile radius of a given UK postcode. It uses fuel price data from the UK government website and provides an average of the prices as well as the cheapest price.
+Welcome to the Petrol Station Finder! This Python program helps you locate the nearest petrol stations and their fuel prices within a 3-mile radius of a given UK postcode. It uses fuel price data from the UK government website and provides an average of the prices as well as the cheapest price. This was created as part of the final project for the CS50P course.
 
 
 ## Features
