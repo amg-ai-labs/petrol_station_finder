@@ -45,18 +45,8 @@ The script uses UK government fuel price data and geolocation to:
 
 - Python 3.x
 - Install dependencies:
-
 ```bash
 pip install geopy requests certifi
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.x  
-- Install dependencies:
-```bash
-    pip install geopy requests certifi
 
 ---
 
