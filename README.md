@@ -1,56 +1,110 @@
-# Petrol Station Finder
+# ⛽ Petrol Station Finder
 
-Welcome to the Petrol Station Finder! This Python program helps you locate the nearest petrol stations and their fuel prices within a 3-mile radius of a given UK postcode. It uses fuel price data from the UK government website and provides an average of the prices as well as the cheapest price. This was created as part of the final project for the CS50P course.
+**Petrol Station Finder** is a Python-based command line tool that helps UK residents locate nearby fuel stations and compare fuel prices by postcode. Built for the CS50P final project, it uses government APIs, geocoding, and distance calculations to offer both convenience and insight for drivers.
 
+---
 
-## Features
+## 💡 Project Overview
 
-* Input a UK postcode to find nearby petrol stations.
-* Retrieve the nearest 10 petrol stations within a 3-mile radius.
-* Display the fuel prices for E5 petrol (super-unleaded), E10 petrol (unleaded), B7 diesel (standard grade), and SDV diesel (supergrade).
-* Calculate and display the average prices and the cheapest prices for each fuel type.
+Fuel prices vary significantly between nearby stations — this tool helps users quickly compare prices and choose the most cost-effective or convenient option.
 
+The script uses UK government fuel price data and geolocation to:
+- Fetch stations within a 3-mile radius of a given UK postcode
+- Display current prices for key fuel types
+- Calculate the average and cheapest prices per fuel type
 
-## Prerequisites
+---
 
-Before you begin, ensure you have the following installed:
+## ✅ Features
 
-* Python 3.x
-* Required Python packages: geopy, requests, json, statistics, ssl, certifi
+- 🔍 Accepts a UK postcode and searches nearby stations (within 3 miles)
+- 📍 Retrieves fuel station data from UK government APIs
+- ⛽ Displays fuel prices for:
+  - E10 petrol (unleaded)
+  - E5 petrol (super unleaded)
+  - B7 diesel (standard)
+  - SDV diesel (super grade)
+- 📊 Calculates average prices and identifies the cheapest for each fuel type
+- 🧪 Includes basic unit tests for key functions
 
-You can install the necessary packages using pip:
+---
 
-`pip install geopy requests certifi`
+## 🛠️ Technologies Used
 
+- Python
+- geopy
+- requests
+- JSON parsing
+- Unit testing with `pytest`
 
-## Usage
+---
 
-1. Clone this repository to your local machine.
-2. Navigate to the directory containing the script.
-3. Run the script using Python:
+## 🚀 Getting Started
 
-`python main.py`
+### Prerequisites
 
-4. Enter a valid UK postcode when prompted.
+- Python 3.x
+- Install dependencies:
 
+```bash
+pip install geopy requests certifi
 
-## Code Overview
+## 🚀 Getting Started
 
-### Main Function
-The `main` function drives the program. It takes the user's postcode, fetches fuel data from various sources, finds nearby stores, and calculates and displays the relevant information.
+### Prerequisites
 
-### Get User Coordinates
-The `get_user_coordinates` function converts a postcode into latitude and longitude coordinates using the Geopy library.
+- Python 3.x  
+- Install dependencies:
+```bash
+    pip install geopy requests certifi
 
-### Fetch Fuel Data
-The `fetch_fuel_data` function fetches fuel price data from multiple URLs and combines it into a single list.
+---
 
-### Find Nearby Stores
-The `find_nearby_stores` function calculates the distance between the user's location and each petrol station, returning those within a 3-mile radius.
+## ▶️ Usage
 
-### Calculate Averages and Cheapest Prices
-The `calculate_averages_and_cheapest` function calculates the average prices and the cheapest prices for each fuel type.
+1. Clone the repository:
+```bash
+    git clone https://github.com/amg-ai-labs/petrol_station_finder.git  
+    cd petrol_station_finder
 
+2. Run the script:
+```bash
+    python main.py
+
+3. Enter a valid UK postcode when prompted.
+
+---
+
+## 🧪 Testing
+
+Basic unit tests are included in `test_main.py`.  
+To run tests:
+```bash
+    pytest test_main.py
+
+---
+
+## 🗂️ Code Overview
+
+### `main.py`
+
+- Main driver script  
+- Includes functions to:
+  - Convert postcode to coordinates (`get_user_coordinates`)
+  - Fetch and aggregate fuel data (`fetch_fuel_data`)
+  - Find nearby stations (`find_nearby_stores`)
+  - Calculate average and cheapest prices (`calculate_averages_and_cheapest`)
+
+### `test_main.py`
+
+- Unit tests for:
+  - Coordinate conversion
+  - Nearby station filtering
+  - Price calculations
+
+---
+
+## 📊 Example Output
 
 ## Example Output
 
