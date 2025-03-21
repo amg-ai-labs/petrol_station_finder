@@ -29,7 +29,7 @@ The script uses UK government fuel price data and geolocation to:
 
 ---
 
-## Technologies Used
+## Requirements
 
 - Python
 - geopy
