@@ -1,10 +1,10 @@
-# ⛽ Petrol Station Finder
+# Petrol Station Finder
 
 **Petrol Station Finder** is a Python-based command line tool that helps UK residents locate nearby fuel stations and compare fuel prices by postcode. Built for the CS50P final project, it uses government APIs, geocoding, and distance calculations to offer both convenience and insight for drivers.
 
 ---
 
-## 💡 Project Overview
+## Project Overview
 
 Fuel prices vary significantly between nearby stations — this tool helps users quickly compare prices and choose the most cost-effective or convenient option.
 
@@ -15,21 +15,21 @@ The script uses UK government fuel price data and geolocation to:
 
 ---
 
-## ✅ Features
+## Features
 
-- 🔍 Accepts a UK postcode and searches nearby stations (within 3 miles)
-- 📍 Retrieves fuel station data from UK government APIs
-- ⛽ Displays fuel prices for:
+-  Accepts a UK postcode and searches nearby stations (within 3 miles)
+-  Retrieves fuel station data from UK government APIs
+-  Displays fuel prices for:
   - E10 petrol (unleaded)
   - E5 petrol (super unleaded)
   - B7 diesel (standard)
   - SDV diesel (super grade)
-- 📊 Calculates average prices and identifies the cheapest for each fuel type
-- 🧪 Includes basic unit tests for key functions
+-  Calculates average prices and identifies the cheapest for each fuel type
+-  Includes basic unit tests for key functions
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - geopy
@@ -39,7 +39,7 @@ The script uses UK government fuel price data and geolocation to:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -50,12 +50,12 @@ pip install geopy requests certifi
 ```
 
 
-### ▶️ Usage
+### Usage
 
 1. Clone the repository:
   ```bash
-  git clone https://github.com/amg-ai-labs/petrol_station_finder.git  
-  cd petrol_station_finder
+    git clone https://github.com/amg-ai-labs/petrol_station_finder.git  
+    cd petrol_station_finder
   ```
 
 2. Run the script:
@@ -67,7 +67,7 @@ pip install geopy requests certifi
 
 ---
 
-### 🧪 Testing
+### Testing
 
 Basic unit tests are included in `test_main.py`.  
 To run tests:
@@ -77,7 +77,7 @@ To run tests:
 
 ---
 
-### 🗂️ Code Overview
+### Code Overview
 
 ### `main.py`
 
@@ -97,7 +97,7 @@ To run tests:
 
 ---
 
-### 📊 Example Output
+### Example Output
 
 ```
 Postcode: SW1A 1AA
